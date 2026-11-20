@@ -6,28 +6,31 @@
 |------|---------|
 | Xcode | 15.0+ |
 | iOS Deployment Target | 17.0+ |
-| XcodeGen | 2.40+ |
+| XcodeGen | 2.40+ (only needed to regenerate the project) |
 | Physical iPhone | Recommended (camera required for full functionality) |
 
 The iOS Simulator does not have a camera. You can run the app in the Simulator but workout sessions will not start. All other screens (Home, History, widget preview) work in the Simulator.
 
-## 1. Install XcodeGen
+## 1. Open the Xcode project
+
+The generated project is committed to the repository. Open it directly:
+
+```bash
+open PocketCoach.xcodeproj
+```
+
+## 2. Regenerate the project (optional)
+
+The `project.yml` file is the XcodeGen source of truth. If you change its target or build settings, regenerate the project:
 
 ```bash
 brew install xcodegen
-```
-
-## 2. Generate the Xcode project
-
-```bash
-cd PocketCoach
-xcodegen generate
-open PocketCoach.xcodeproj
+xcodegen generate --spec project.yml
 ```
 
 ## 3. Set your bundle ID
 
-In `project.yml`, replace `com.yourname` with your reverse-domain identifier. Re-run `xcodegen generate`.
+In `project.yml`, replace `com.yourname` with your reverse-domain identifier. Re-run `xcodegen generate` after changing it.
 
 ## 4. Enable HealthKit
 
@@ -35,8 +38,10 @@ In the Apple Developer portal, enable the HealthKit capability for your App ID. 
 
 ## 5. Run tests
 
-```
-cmd+U in Xcode
+Select the `PocketCoach` scheme and press `cmd+U` in Xcode, or run:
+
+```bash
+xcodebuild test -project PocketCoach.xcodeproj -scheme PocketCoach -destination 'platform=iOS Simulator,name=iPhone 16'
 ```
 
 All tests are pure unit tests with no camera or HealthKit dependencies. Run on any Simulator.

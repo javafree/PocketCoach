@@ -45,3 +45,13 @@ targets:
       - target: PocketCoach
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.yourname.pocketcoach.tests
+
+schemes:
+  PocketCoach:
+    build:
+      targets:
+        PocketCoach: all
+    test:
+      config: Debug
+      targets:
+        - PocketCoachTests

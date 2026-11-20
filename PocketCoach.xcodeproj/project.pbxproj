@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0022615E0486BC7681052187 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FD0BB8364C96CADEED7180 /* HomeView.swift */; };
+		020C72F205638588E3EFC701 /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54F897791FA72E5E441D56 /* WorkoutSession.swift */; };
+		0E78D02EFC2F58D07F627D06 /* FormFeedbackBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0BB5EA724BA331094AAA1 /* FormFeedbackBanner.swift */; };
+		1105F09816F5998E18DE1A67 /* AudioCueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAFE9EE6DCF089F0E5D76E2 /* AudioCueService.swift */; };
+		13B591DBDA26DDBCE4EC0386 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DF2837E5C94DA92C0D697 /* Exercise.swift */; };
+		1CFA699A3F837F7BACC1BA86 /* JointPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE34DB3328F9F0DA5FFDE828 /* JointPositions.swift */; };
+		2637557FAA4E75BF89C74B65 /* FormIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392206CD802D69FC3AF1D79E /* FormIssue.swift */; };
+		2665259F64D6ED7BB235AEC1 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DF2837E5C94DA92C0D697 /* Exercise.swift */; };
+		2B96AD5FBACAF9E7BFB85F5B /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518670009684F81192B4F1FC /* HealthKitService.swift */; };
+		2DE14FF16EF03CEE9B837766 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350D3FF1C4BB87D7BA4F47F5 /* WorkoutViewModel.swift */; };
+		3A138028F60887C0FC7803B5 /* FormIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392206CD802D69FC3AF1D79E /* FormIssue.swift */; };
+		41DF6AC2A070DE9123A5850D /* WorkoutHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C16A49D86A2F8FBFAC5C03 /* WorkoutHistoryService.swift */; };
+		4ADE028E3B64FB41747DBE63 /* RepCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05880253E5B9FEC39BDFE4B3 /* RepCounterTests.swift */; };
+		51FEB08CE52C4FC7A0F691C9 /* PocketCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CC7E3F5439011835F53291 /* PocketCoachApp.swift */; };
+		599593129310C84C5F025D4D /* RepCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93576F97333B14368C06E1C5 /* RepCounter.swift */; };
+		62298A51DF70F579B4DB2337 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC30DE75A32C17B133B8ED2 /* WorkoutView.swift */; };
+		655805BC38A48009D1B36F16 /* CGPoint+Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F52E7927607A679894B98 /* CGPoint+Geometry.swift */; };
+		6A6DE7510B91F14D59D98944 /* WorkoutSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E5A90178FDA857D41CE4F /* WorkoutSummaryView.swift */; };
+		6AFA059D5DC5BFEE1FDCA0D3 /* PocketCoachWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808346EBABEB7370362D92D7 /* PocketCoachWidget.swift */; };
+		790C8137976A06FC3321DA65 /* ExerciseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CEEF59D795F6B3D2FB524 /* ExerciseCard.swift */; };
+		7AEE4626F0A689B0F36694D9 /* PocketCoachWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BA61E1704E59D763271451E7 /* PocketCoachWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83E8C15D4F623E4357E2C9FB /* PoseOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979DB461F0A9D4BAE18D639 /* PoseOverlayView.swift */; };
+		905EABEE310B4253383DC3DF /* JointPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE34DB3328F9F0DA5FFDE828 /* JointPositions.swift */; };
+		A17587C3445A0143FD4AF3AE /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D98ED0D9A54668556754EC6 /* HistoryViewModel.swift */; };
+		A435B40C0C18DF7A982C5FA9 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6CA5E08E494745EED2D5C /* CameraPreviewView.swift */; };
+		A5DFD03FEDC06A5DC14BFAFC /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DA061146FC421018F6F76 /* CameraService.swift */; };
+		B12AE15D444AA7A75842DF2C /* FormAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE502E190CFD94CF62BFA382 /* FormAnalyzer.swift */; };
+		B245C0CEDEAE7D4BAEE2B7BC /* RepState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBBECFDE5909EAA3F0960D6 /* RepState.swift */; };
+		C3C116A74506BB0EC81D6324 /* VNHumanBodyPoseObservation+Joints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8905DEDED663AA70D164448 /* VNHumanBodyPoseObservation+Joints.swift */; };
+		C9410DA8130A428219FF803D /* RepState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBBECFDE5909EAA3F0960D6 /* RepState.swift */; };
+		DB8B7268497100E446002BE6 /* PoseDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1DEBFBCB7E7E88A6AAC9A /* PoseDetectionService.swift */; };
+		DDC7F48F6002B5668CDBBC3B /* WorkoutHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C16A49D86A2F8FBFAC5C03 /* WorkoutHistoryService.swift */; };
+		E48CC450B8DE2C6BF7C2D63E /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A9AA38A87C2D4A24F52033 /* WorkoutDetailView.swift */; };
+		E706458E1E06E35D7514C25F /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD996C394EAC53DA5B40A1 /* HUDView.swift */; };
+		E7F87381CF94031B51465DE2 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BF51E9AF2777A3C84EE66 /* HistoryView.swift */; };
+		F13B806C80244C2B1EB2AC54 /* FormAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4778BC4281B7A4E9DC603 /* FormAnalyzerTests.swift */; };
+		F4C9616BC7BBAA07287D08AE /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54F897791FA72E5E441D56 /* WorkoutSession.swift */; };
+		FF7612EBFC1C637A8AA7263C /* CGPointGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0A86487DFB38B4FB7810F /* CGPointGeometryTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F151F05B22A873759A922D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C40094A48311D0A73F9A9858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F131263574350CAC2B74F2CF;
+			remoteInfo = PocketCoach;
+		};
+		F10DC41D45BCD55A81A1FCF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C40094A48311D0A73F9A9858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7432242EAD5F4AD2CC81A3B0;
+			remoteInfo = PocketCoachWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A03FAEDC57A0E1775B6E2013 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7AEE4626F0A689B0F36694D9 /* PocketCoachWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00346AF17736B997E7290932 /* PocketCoach.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketCoach.entitlements; sourceTree = "<group>"; };
+		05880253E5B9FEC39BDFE4B3 /* RepCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepCounterTests.swift; sourceTree = "<group>"; };
+		0BEAAFB9B38A0BC77D3D6C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E9F52E7927607A679894B98 /* CGPoint+Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Geometry.swift"; sourceTree = "<group>"; };
+		138DF2837E5C94DA92C0D697 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		1B1DA061146FC421018F6F76 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		1CF0A86487DFB38B4FB7810F /* CGPointGeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointGeometryTests.swift; sourceTree = "<group>"; };
+		25343C9AA612863D02B4D9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		350D3FF1C4BB87D7BA4F47F5 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
+		392206CD802D69FC3AF1D79E /* FormIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormIssue.swift; sourceTree = "<group>"; };
+		518670009684F81192B4F1FC /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		523CEEF59D795F6B3D2FB524 /* ExerciseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCard.swift; sourceTree = "<group>"; };
+		5B54F897791FA72E5E441D56 /* WorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
+		6DC30DE75A32C17B133B8ED2 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		77CC7E3F5439011835F53291 /* PocketCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketCoachApp.swift; sourceTree = "<group>"; };
+		7BE6CA5E08E494745EED2D5C /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		7FAFE9EE6DCF089F0E5D76E2 /* AudioCueService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCueService.swift; sourceTree = "<group>"; };
+		808346EBABEB7370362D92D7 /* PocketCoachWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketCoachWidget.swift; sourceTree = "<group>"; };
+		8D98ED0D9A54668556754EC6 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		8DC0BB5EA724BA331094AAA1 /* FormFeedbackBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFeedbackBanner.swift; sourceTree = "<group>"; };
+		8EDCA900EE594AD0A1647305 /* PocketCoach.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PocketCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90A9AA38A87C2D4A24F52033 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
+		90F1DEBFBCB7E7E88A6AAC9A /* PoseDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDetectionService.swift; sourceTree = "<group>"; };
+		93576F97333B14368C06E1C5 /* RepCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepCounter.swift; sourceTree = "<group>"; };
+		9DBBECFDE5909EAA3F0960D6 /* RepState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepState.swift; sourceTree = "<group>"; };
+		9F941C20E7E78AEE2178C2D9 /* PocketCoachTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PocketCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A4778BC4281B7A4E9DC603 /* FormAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormAnalyzerTests.swift; sourceTree = "<group>"; };
+		A2FD0BB8364C96CADEED7180 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A8905DEDED663AA70D164448 /* VNHumanBodyPoseObservation+Joints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNHumanBodyPoseObservation+Joints.swift"; sourceTree = "<group>"; };
+		AE34DB3328F9F0DA5FFDE828 /* JointPositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JointPositions.swift; sourceTree = "<group>"; };
+		B979DB461F0A9D4BAE18D639 /* PoseOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseOverlayView.swift; sourceTree = "<group>"; };
+		BA61E1704E59D763271451E7 /* PocketCoachWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = PocketCoachWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3BF51E9AF2777A3C84EE66 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		CE502E190CFD94CF62BFA382 /* FormAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormAnalyzer.swift; sourceTree = "<group>"; };
+		D1C16A49D86A2F8FBFAC5C03 /* WorkoutHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryService.swift; sourceTree = "<group>"; };
+		E54E5A90178FDA857D41CE4F /* WorkoutSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSummaryView.swift; sourceTree = "<group>"; };
+		F5FD996C394EAC53DA5B40A1 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1705EDA6DEEFB76A052FA0D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				138DF2837E5C94DA92C0D697 /* Exercise.swift */,
+				392206CD802D69FC3AF1D79E /* FormIssue.swift */,
+				AE34DB3328F9F0DA5FFDE828 /* JointPositions.swift */,
+				9DBBECFDE5909EAA3F0960D6 /* RepState.swift */,
+				5B54F897791FA72E5E441D56 /* WorkoutSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		271166AB0429DF4DEB812AAA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D98ED0D9A54668556754EC6 /* HistoryViewModel.swift */,
+				350D3FF1C4BB87D7BA4F47F5 /* WorkoutViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3349163197029D94F4DE116C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0E9F52E7927607A679894B98 /* CGPoint+Geometry.swift */,
+				A8905DEDED663AA70D164448 /* VNHumanBodyPoseObservation+Joints.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42E415A36493FB0551C14D0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EDCA900EE594AD0A1647305 /* PocketCoach.app */,
+				9F941C20E7E78AEE2178C2D9 /* PocketCoachTests.xctest */,
+				BA61E1704E59D763271451E7 /* PocketCoachWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DED16F85BE5A43C9E68D39A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BEAAFB9B38A0BC77D3D6C04 /* Info.plist */,
+				00346AF17736B997E7290932 /* PocketCoach.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4ED8D38B1E97781019497368 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				7BE6CA5E08E494745EED2D5C /* CameraPreviewView.swift */,
+				8DC0BB5EA724BA331094AAA1 /* FormFeedbackBanner.swift */,
+				F5FD996C394EAC53DA5B40A1 /* HUDView.swift */,
+				B979DB461F0A9D4BAE18D639 /* PoseOverlayView.swift */,
+				E54E5A90178FDA857D41CE4F /* WorkoutSummaryView.swift */,
+				6DC30DE75A32C17B133B8ED2 /* WorkoutView.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		94792234089B98DB8E768605 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				77CC7E3F5439011835F53291 /* PocketCoachApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9FCE8D2504A8FE5374B82C3D = {
+			isa = PBXGroup;
+			children = (
+				B77329843FA8398FE1442489 /* PocketCoach */,
+				DAA6C38892E4044121FAF72D /* PocketCoachTests */,
+				A23E4512D7B538B3A4951241 /* PocketCoachWidget */,
+				42E415A36493FB0551C14D0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A23E4512D7B538B3A4951241 /* PocketCoachWidget */ = {
+			isa = PBXGroup;
+			children = (
+				25343C9AA612863D02B4D9BC /* Info.plist */,
+				808346EBABEB7370362D92D7 /* PocketCoachWidget.swift */,
+			);
+			path = PocketCoachWidget;
+			sourceTree = "<group>";
+		};
+		A5B0169681294B55673B781B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2F4A1AE87F494AFF91C22C6 /* History */,
+				B87279B33E4C2527F430B313 /* Home */,
+				4ED8D38B1E97781019497368 /* Workout */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B77329843FA8398FE1442489 /* PocketCoach */ = {
+			isa = PBXGroup;
+			children = (
+				94792234089B98DB8E768605 /* App */,
+				3349163197029D94F4DE116C /* Extensions */,
+				1705EDA6DEEFB76A052FA0D7 /* Models */,
+				4DED16F85BE5A43C9E68D39A /* Resources */,
+				E580573DB7408AFCF0DD943E /* Services */,
+				271166AB0429DF4DEB812AAA /* ViewModels */,
+				A5B0169681294B55673B781B /* Views */,
+			);
+			path = PocketCoach;
+			sourceTree = "<group>";
+		};
+		B87279B33E4C2527F430B313 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				523CEEF59D795F6B3D2FB524 /* ExerciseCard.swift */,
+				A2FD0BB8364C96CADEED7180 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DAA6C38892E4044121FAF72D /* PocketCoachTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0A86487DFB38B4FB7810F /* CGPointGeometryTests.swift */,
+				A1A4778BC4281B7A4E9DC603 /* FormAnalyzerTests.swift */,
+				05880253E5B9FEC39BDFE4B3 /* RepCounterTests.swift */,
+			);
+			path = PocketCoachTests;
+			sourceTree = "<group>";
+		};
+		E580573DB7408AFCF0DD943E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7FAFE9EE6DCF089F0E5D76E2 /* AudioCueService.swift */,
+				1B1DA061146FC421018F6F76 /* CameraService.swift */,
+				CE502E190CFD94CF62BFA382 /* FormAnalyzer.swift */,
+				518670009684F81192B4F1FC /* HealthKitService.swift */,
+				90F1DEBFBCB7E7E88A6AAC9A /* PoseDetectionService.swift */,
+				93576F97333B14368C06E1C5 /* RepCounter.swift */,
+				D1C16A49D86A2F8FBFAC5C03 /* WorkoutHistoryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F2F4A1AE87F494AFF91C22C6 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				CA3BF51E9AF2777A3C84EE66 /* HistoryView.swift */,
+				90A9AA38A87C2D4A24F52033 /* WorkoutDetailView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7432242EAD5F4AD2CC81A3B0 /* PocketCoachWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B73419738C7190040DE622B /* Build configuration list for PBXNativeTarget "PocketCoachWidget" */;
+			buildPhases = (
+				FE6BBA5CB38485BD4B164E58 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketCoachWidget;
+			packageProductDependencies = (
+			);
+			productName = PocketCoachWidget;
+			productReference = BA61E1704E59D763271451E7 /* PocketCoachWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EFEBA55EDC4B079E76D15729 /* PocketCoachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554ABBE1870AD476DBD39CE3 /* Build configuration list for PBXNativeTarget "PocketCoachTests" */;
+			buildPhases = (
+				B957D640DB55EE86384BBB60 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC71FED5B1EF97026E809515 /* PBXTargetDependency */,
+			);
+			name = PocketCoachTests;
+			packageProductDependencies = (
+			);
+			productName = PocketCoachTests;
+			productReference = 9F941C20E7E78AEE2178C2D9 /* PocketCoachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F131263574350CAC2B74F2CF /* PocketCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD566CC5ED0EE4916BE2BDD1 /* Build configuration list for PBXNativeTarget "PocketCoach" */;
+			buildPhases = (
+				32E607A2B6267A61BF2606EB /* Sources */,
+				A03FAEDC57A0E1775B6E2013 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00B0D2323795C61502A90CF0 /* PBXTargetDependency */,
+			);
+			name = PocketCoach;
+			packageProductDependencies = (
+			);
+			productName = PocketCoach;
+			productReference = 8EDCA900EE594AD0A1647305 /* PocketCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C40094A48311D0A73F9A9858 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					7432242EAD5F4AD2CC81A3B0 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					EFEBA55EDC4B079E76D15729 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					F131263574350CAC2B74F2CF = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 15C611C202966E03284F4514 /* Build configuration list for PBXProject "PocketCoach" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9FCE8D2504A8FE5374B82C3D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 42E415A36493FB0551C14D0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F131263574350CAC2B74F2CF /* PocketCoach */,
+				7432242EAD5F4AD2CC81A3B0 /* PocketCoachWidget */,
+				EFEBA55EDC4B079E76D15729 /* PocketCoachTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32E607A2B6267A61BF2606EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1105F09816F5998E18DE1A67 /* AudioCueService.swift in Sources */,
+				655805BC38A48009D1B36F16 /* CGPoint+Geometry.swift in Sources */,
+				A435B40C0C18DF7A982C5FA9 /* CameraPreviewView.swift in Sources */,
+				A5DFD03FEDC06A5DC14BFAFC /* CameraService.swift in Sources */,
+				13B591DBDA26DDBCE4EC0386 /* Exercise.swift in Sources */,
+				790C8137976A06FC3321DA65 /* ExerciseCard.swift in Sources */,
+				B12AE15D444AA7A75842DF2C /* FormAnalyzer.swift in Sources */,
+				0E78D02EFC2F58D07F627D06 /* FormFeedbackBanner.swift in Sources */,
+				3A138028F60887C0FC7803B5 /* FormIssue.swift in Sources */,
+				E706458E1E06E35D7514C25F /* HUDView.swift in Sources */,
+				2B96AD5FBACAF9E7BFB85F5B /* HealthKitService.swift in Sources */,
+				E7F87381CF94031B51465DE2 /* HistoryView.swift in Sources */,
+				A17587C3445A0143FD4AF3AE /* HistoryViewModel.swift in Sources */,
+				0022615E0486BC7681052187 /* HomeView.swift in Sources */,
+				905EABEE310B4253383DC3DF /* JointPositions.swift in Sources */,
+				51FEB08CE52C4FC7A0F691C9 /* PocketCoachApp.swift in Sources */,
+				DB8B7268497100E446002BE6 /* PoseDetectionService.swift in Sources */,
+				83E8C15D4F623E4357E2C9FB /* PoseOverlayView.swift in Sources */,
+				599593129310C84C5F025D4D /* RepCounter.swift in Sources */,
+				B245C0CEDEAE7D4BAEE2B7BC /* RepState.swift in Sources */,
+				C3C116A74506BB0EC81D6324 /* VNHumanBodyPoseObservation+Joints.swift in Sources */,
+				E48CC450B8DE2C6BF7C2D63E /* WorkoutDetailView.swift in Sources */,
+				41DF6AC2A070DE9123A5850D /* WorkoutHistoryService.swift in Sources */,
+				020C72F205638588E3EFC701 /* WorkoutSession.swift in Sources */,
+				6A6DE7510B91F14D59D98944 /* WorkoutSummaryView.swift in Sources */,
+				62298A51DF70F579B4DB2337 /* WorkoutView.swift in Sources */,
+				2DE14FF16EF03CEE9B837766 /* WorkoutViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B957D640DB55EE86384BBB60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7612EBFC1C637A8AA7263C /* CGPointGeometryTests.swift in Sources */,
+				F13B806C80244C2B1EB2AC54 /* FormAnalyzerTests.swift in Sources */,
+				4ADE028E3B64FB41747DBE63 /* RepCounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6BBA5CB38485BD4B164E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2665259F64D6ED7BB235AEC1 /* Exercise.swift in Sources */,
+				2637557FAA4E75BF89C74B65 /* FormIssue.swift in Sources */,
+				1CFA699A3F837F7BACC1BA86 /* JointPositions.swift in Sources */,
+				6AFA059D5DC5BFEE1FDCA0D3 /* PocketCoachWidget.swift in Sources */,
+				C9410DA8130A428219FF803D /* RepState.swift in Sources */,
+				DDC7F48F6002B5668CDBBC3B /* WorkoutHistoryService.swift in Sources */,
+				F4C9616BC7BBAA07287D08AE /* WorkoutSession.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00B0D2323795C61502A90CF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7432242EAD5F4AD2CC81A3B0 /* PocketCoachWidget */;
+			targetProxy = F10DC41D45BCD55A81A1FCF8 /* PBXContainerItemProxy */;
+		};
+		BC71FED5B1EF97026E809515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F131263574350CAC2B74F2CF /* PocketCoach */;
+			targetProxy = 5F151F05B22A873759A922D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15842401814157C38D324AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PocketCoachWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.pocketcoach.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		450841DC655004C8B644422B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PocketCoach/Resources/PocketCoach.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PocketCoach/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.pocketcoach;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EB9EA14D5286358E19D6E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		588DDE4FFE537CE6BB8802BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.pocketcoach.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketCoach.app/PocketCoach";
+			};
+			name = Release;
+		};
+		5E09F1F138C73951F4B97CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PocketCoach/Resources/PocketCoach.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PocketCoach/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.pocketcoach;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9550CEC64B0367F8F4582840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PocketCoachWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.pocketcoach.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD75E8B4D32265434226FEA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.pocketcoach.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketCoach.app/PocketCoach";
+			};
+			name = Debug;
+		};
+		DED413363DC55AF93EE1143E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15C611C202966E03284F4514 /* Build configuration list for PBXProject "PocketCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EB9EA14D5286358E19D6E60 /* Debug */,
+				DED413363DC55AF93EE1143E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2B73419738C7190040DE622B /* Build configuration list for PBXNativeTarget "PocketCoachWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15842401814157C38D324AEA /* Debug */,
+				9550CEC64B0367F8F4582840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		554ABBE1870AD476DBD39CE3 /* Build configuration list for PBXNativeTarget "PocketCoachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD75E8B4D32265434226FEA0 /* Debug */,
+				588DDE4FFE537CE6BB8802BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DD566CC5ED0EE4916BE2BDD1 /* Build configuration list for PBXNativeTarget "PocketCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				450841DC655004C8B644422B /* Debug */,
+				5E09F1F138C73951F4B97CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C40094A48311D0A73F9A9858 /* Project object */;
+}

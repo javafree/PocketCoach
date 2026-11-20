@@ -180,7 +180,7 @@ func bearing(to other: CGPoint) -> Double
 ```bash
 cmd+U in Xcode
 # or
-xcodebuild test -scheme PocketCoach -destination 'platform=iOS Simulator,name=iPhone 15'
+xcodebuild test -scheme PocketCoach -destination 'platform=iOS Simulator,name=iPhone 16'
 ```
 
 29 tests across three files. No camera, no HealthKit, no network — runs on any Simulator.
@@ -195,14 +195,19 @@ xcodebuild test -scheme PocketCoach -destination 'platform=iOS Simulator,name=iP
 
 ## Getting Started
 
-See [docs/SETUP.md](docs/SETUP.md) for the full guide.
+The generated Xcode project is included in the repository. Clone the repo and open it directly:
+
+```bash
+git clone https://github.com/javafree/PocketCoach
+cd PocketCoach
+open PocketCoach.xcodeproj
+```
+
+To regenerate the project after changing `project.yml`, install XcodeGen and run `xcodegen generate`:
 
 ```bash
 brew install xcodegen
-git clone https://github.com/johnsaurabh/PocketCoach
-cd PocketCoach
-xcodegen generate
-open PocketCoach.xcodeproj
+xcodegen generate --spec project.yml
 ```
 
 A physical iPhone is required for workout sessions. The iOS Simulator has no camera.

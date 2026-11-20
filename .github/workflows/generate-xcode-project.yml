@@ -1,0 +1,73 @@
+name: Generate and validate Xcode project
+
+on:
+  push:
+    branches:
+      - master
+      - chore/generate-xcode-project
+    paths:
+      - "project.yml"
+      - "PocketCoach/**"
+      - "PocketCoachWidget/**"
+      - "PocketCoachTests/**"
+      - ".github/workflows/generate-xcode-project.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pocketcoach-xcode-project-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate-and-build:
+    runs-on: macos-15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          persist-credentials: true
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: "16.4"
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: xcodegen generate --spec project.yml
+
+      - name: Commit generated Xcode project
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add PocketCoach.xcodeproj
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: generate PocketCoach Xcode project [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: List generated schemes
+        run: xcodebuild -list -project PocketCoach.xcodeproj
+
+      - name: Build iOS app and widget
+        run: >
+          xcodebuild
+          -project PocketCoach.xcodeproj
+          -scheme PocketCoach
+          -destination 'generic/platform=iOS Simulator'
+          CODE_SIGNING_ALLOWED=NO
+          build
+
+      - name: Run unit tests
+        run: >
+          xcodebuild
+          -project PocketCoach.xcodeproj
+          -scheme PocketCoach
+          -destination 'platform=iOS Simulator,name=iPhone 16'
+          CODE_SIGNING_ALLOWED=NO
+          test

@@ -17,7 +17,7 @@ struct PoseOverlayView: View {
     // MARK: - Skeleton Drawing
 
     private func drawSkeleton(in context: GraphicsContext) {
-        let lineStyle = GraphicsContext.StrokeStyle(lineWidth: 3, lineCap: .round)
+        let lineStyle = StrokeStyle(lineWidth: 3, lineCap: .round)
         let color     = Color.orange.opacity(0.85)
 
         // Torso
@@ -61,7 +61,7 @@ struct PoseOverlayView: View {
         }
     }
 
-    private func drawBone(_ context: GraphicsContext, from a: CGPoint?, to b: CGPoint?, color: Color, style: GraphicsContext.StrokeStyle) {
+    private func drawBone(_ context: GraphicsContext, from a: CGPoint?, to b: CGPoint?, color: Color, style: StrokeStyle) {
         guard let a, let b else { return }
         var path = Path()
         path.move(to: toScreen(a))

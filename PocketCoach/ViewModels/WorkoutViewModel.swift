@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import CoreMedia
 
 @MainActor
 final class WorkoutViewModel: ObservableObject {
